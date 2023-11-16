@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wildlife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Forest Fire Wildlife</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToSaheliDas()">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToCausesAndPrevention()">Forest Fires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToContactUs()">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="mt-5">Welcome to Forest Fire Wildlife</h1>
+                    <p class="lead">
+                        We stand as guardians of nature, advocating for the preservation of ecosystems and the protection of vulnerable wildlife from the destructive impact of forest fires.
+                    </p>
+                    <button class="btn btn-light px-5 py-2" onclick="scrollToContactUs()">Contact Us</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="jungle-on-fire.jpg" alt="saheli" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pray">
+                            <img src="200107-90-004932_1578412686-2000x1334.jpg" alt="pray" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="saheliDasSection" class="panel text-left">
+                            <h1>Saheli Das</h1>
+                            <p class="pt-4">
+                                Forests, the lungs of our planet, are home to a myriad of flora and fauna, each playing a vital role in maintaining the delicate balance of our environment. However, the increasing frequency and intensity of forest fires pose a significant threat to this biodiversity. From towering trees to elusive creatures, the flames spare no one, leaving devastation in their wake.
+                            </p>
+                            <p>
+                                Beyond awareness, we actively support and participate in conservation initiatives aimed at restoring and preserving natural ecosystems. Collaborating with like-minded organizations, we contribute to reforestation projects and habitat rehabilitation, ensuring that affected areas have a chance to thrive once more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="container text-center">
+                <h1>Causes and Prevention</h1>
+                <!-- Your Causes and Prevention content goes here -->
+            </div>
+        </section>
+        <section id="contactus" class="section-3">
+            <div class="container-fluid">
+                <!-- Your Contact Us content goes here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Phone: 8100104216</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" onclick="scrollToSaheliDas()">About Us</a></li>
+                        <li><a href="#" onclick="scrollToCausesAndPrevention()">Forest Fires</a></li>
+                        <li><a href="#">News and Updates</a></li>
+                        <li><a href="#" onclick="scrollToContactUs()">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <p>Follow us on social media for updates and news:</p>
+                    <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="https://instagram.com/saheliidas_?utm_source=qr&igshid=OGU0MmVlOWVjOQ==" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-instagram"></i>instragrm</a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; 2023 Forest Fire Wildlife. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        function scrollToContactUs() {
+            document.getElementById('contactus').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSaheliDas() {
+            document.getElementById('saheliDasSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToCausesAndPrevention() {
+            document.querySelector('.section-2').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
